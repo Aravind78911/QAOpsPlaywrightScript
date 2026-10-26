@@ -1,0 +1,7 @@
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YWJlMjcyMjJiZTdhNGJjMmI3ZjhmM2EiLCJ1c2VyRW1haWwiOiJhaXRoYWFyYXZpbmQ0ODFAZ21haWwuY29tIiwidXNlck1vYmlsZSI6OTM5ODk2NjQ4MSwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc5MjQwMjMxNSwiZXhwIjoxODIzOTU5OTE1fQ.YxpnH8Z_90CVE_iy4no5k4C-dzyn1iyAHM2Xmmvlktc
+{
+  orders: [ '6ad5e38b93b084c41f594428' ],
+  productOrderId: [ '6960eac0c941646b7a8b3e68' ],
+  message: 'Order Placed Successfully'
+}
+ZARA COAT 3

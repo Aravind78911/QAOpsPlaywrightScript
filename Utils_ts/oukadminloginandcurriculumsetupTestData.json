@@ -1,0 +1,14 @@
+[
+    {
+        "emailaddress": "adminuser@gmail.com",
+        "password": "Welcome@123",
+        "code": "vu789",
+        "schoolname": "vibin school"
+    },
+    {
+        "emailaddress": "adminrakesh@mailinator.com",
+        "password": "Welcome@123",
+        "code": "vn567",
+        "schoolname": "vphas school"
+    }
+]

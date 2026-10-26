@@ -1,0 +1,30 @@
+const base = require('@playwright/test');
+
+
+
+exports.signuptest = base.test.extend(
+    {
+        testSignupdetails:
+
+        {
+            email: "juhak@mailinator.com",
+            password: "Welcome@123",
+            retypepassword: "Welcome@123",
+            program: "BOSS",
+            text: "BOSS - Bachelor of Science (B.Sc.) – Science",
+            gender: "Male",
+            firstname: "Ankith",
+            lastname: "Goud",
+            passportnumber: "P1234567",
+            dod: "8",
+            dom: "7",
+            doy: "1995",
+            countryofresidence: "Kenya",
+            phonenumber: "712345678",
+            disability: "No",
+            placeofbirth: "Kenya",
+            county: "Bomet"
+
+        }
+    }
+)

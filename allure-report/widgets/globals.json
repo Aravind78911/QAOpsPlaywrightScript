@@ -1,0 +1,1 @@
+{"errors":[{"timestamp":1792220819745,"message":"beforeAll hook failed: ReferenceError: LoginPage is not defined","trace":"ReferenceError: LoginPage is not defined\n    at C:\\Users\\ACER\\PlayWrightAutomation\\tests\\WebAPIPart2.spec.js:7:23"}],"attachments":[]}

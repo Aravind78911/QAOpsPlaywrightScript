@@ -1,0 +1,214 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "ecommerce-validations;placing-the-order",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Placing the Order",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 828527300
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2482898098
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a login to Ecommerce application with \"aithaaravind481@gmail.com\" and \"Welcome@123\"",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:6"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 190574898
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Add \"zara coat 3\" to Cart",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:14"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 5128618498,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('h3:has-text(\\'ZARA COAT 3\\')')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('h3:has-text(\\'ZARA COAT 3\\')') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h3:has-text(\\'ZARA COAT 3\\')')\u001b[22m\n\n    at captureRawStack (C:\\Users\\ACER\\PlayWrightAutomation\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (C:\\Users\\ACER\\PlayWrightAutomation\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toBeVisible (C:\\Users\\ACER\\PlayWrightAutomation\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at CheckOutPage.verifyProductDisplayed (C:\\Users\\ACER\\PlayWrightAutomation\\pageobjects\\CheckOutPage.js:20:41)\n    at World.<anonymous> (C:\\Users\\ACER\\PlayWrightAutomation\\features\\step_definitions\\steps.js:24:24)"
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify \"zara coat 3\" is displayed in the Cart",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:21"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify Order is present in the OrderHistory",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:28"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 183299
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "ecommerce-validations;placing-the-order",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Placing the Order",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 807000100
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 765242800
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "a login to Ecommerce2 application with \"aithaaravind481@gmail.com\" and \"Welcome@123\"",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 157037298
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify Error message is displayed",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 480900
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Validation",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "ecommerce-validations;placing-the-order",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Placing the Order",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 527302700
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 594700000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "a login to Ecommerce2 application with \"hello@123.com\" and \"Iamhello\"",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 172621798
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify Error message is displayed",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 143700
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Validation",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "ecommerce-validations",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Ecommerce validations",
+    "tags": [],
+    "uri": "features\\Ecommerce.feature"
+  }
+]
