@@ -22,5 +22,5 @@ for (const signup of signupData) {
         const signupPage = new SignupPage(page);
         await signupPage.goTo("");
         await signupPage.validSignupdetails(testSignupdetails.email, testSignupdetails.password, testSignupdetails.retypepassword, testSignupdetails.program, testSignupdetails.text, testSignupdetails.gender, testSignupdetails.firstname, testSignupdetails.lastname, testSignupdetails.passportnumber, testSignupdetails.dod, testSignupdetails.dom, testSignupdetails.doy, testSignupdetails.countryofresidence, testSignupdetails.phonenumber, testSignupdetails.disability, testSignupdetails.placeofbirth, testSignupdetails.county);
-        //ouksignup test fixed tests
+        //ouksignup test fixed test
     });
