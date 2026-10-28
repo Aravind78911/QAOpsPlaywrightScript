@@ -15,7 +15,7 @@ for (const oukadmin of oukadmindata) {
     const curriculumSetup = oukpoManager.getCurriculumSetupPage();
     await curriculumSetup.addCurriculumSetupSchoolDetails(oukadmin.code, oukadmin.schoolname);
   });
-}//admin test script changes
+}//admin test script change
 //second method
 logintest(`ouk admin login`, async ({ page, testadminflowdata }) => {
   /*const browserContext = await browser.newContext();
