@@ -15,7 +15,7 @@ for (const signup of signupData) {
 }
 
 
-    signuptest.only(`Signupdetails`, async ({ page,testSignupdetails }) => {
+    signuptest(`Signupdetails`, async ({ page,testSignupdetails }) => {
         /*const browserContext = await browser.newContext();
         const page = await browserContext.newPage();*/
         test.setTimeout(30000);

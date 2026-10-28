@@ -1,0 +1,49 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: OUKERPSIGNUPPO.spec.js >> Signupdetails for juhae@mailinator.com
+- Location: tests\OUKERPSIGNUPPO.spec.js:7:9
+
+# Error details
+
+```
+TypeError: Class constructor SignupPage cannot be invoked without 'new'
+```
+
+# Test source
+
+```ts
+  1  | import { test } from '@playwright/test';
+  2  | const { SignupPage } = require('../pageobjects/SignupPage');
+  3  | const {signuptest} = require('../Utils/ouksignnupfixtures');
+  4  | 
+  5  | const signupData = JSON.parse(JSON.stringify(require('../Utils/ouksignupTestData.json')))
+  6  | for (const signup of signupData) {
+  7  |     test(`Signupdetails for ${signup.email}`, async ({ page }) => {
+  8  |         /*const browserContext = await browser.newContext();
+  9  |         const page = await browserContext.newPage();*/
+  10 |         test.setTimeout(30000);
+> 11 |         const signupPage =  SignupPage(page);
+     |                             ^ TypeError: Class constructor SignupPage cannot be invoked without 'new'
+  12 |         await signupPage.goTo("");
+  13 |         await signupPage.validSignupdetails(signup.email, signup.password, signup.retypepassword, signup.program, signup.text, signup.gender, signup.firstname, signup.lastname, signup.passportnumber, signup.dod, signup.dom, signup.doy, signup.countryofresidence, signup.phonenumber, signup.disability, signup.placeofbirth, signup.county);
+  14 |     });
+  15 | }
+  16 | 
+  17 | 
+  18 |     signuptest(`Signupdetails`, async ({ page,testSignupdetails }) => {
+  19 |         /*const browserContext = await browser.newContext();
+  20 |         const page = await browserContext.newPage();*/
+  21 |         test.setTimeout(30000);
+  22 |         const signupPage = new SignupPage(page);
+  23 |         await signupPage.goTo("");
+  24 |         await signupPage.validSignupdetails(testSignupdetails.email, testSignupdetails.password, testSignupdetails.retypepassword, testSignupdetails.program, testSignupdetails.text, testSignupdetails.gender, testSignupdetails.firstname, testSignupdetails.lastname, testSignupdetails.passportnumber, testSignupdetails.dod, testSignupdetails.dom, testSignupdetails.doy, testSignupdetails.countryofresidence, testSignupdetails.phonenumber, testSignupdetails.disability, testSignupdetails.placeofbirth, testSignupdetails.county);
+  25 |         //ouksignup test fixed tests
+  26 |     });
+  27 | 
+```

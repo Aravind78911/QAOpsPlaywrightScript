@@ -17,7 +17,7 @@ for (const oukadmin of oukadmindata) {
   });
 }
 //second method
-logintest.only(`ouk admin login`, async ({ page, testadminflowdata }) => {
+logintest(`ouk admin login`, async ({ page, testadminflowdata }) => {
   /*const browserContext = await browser.newContext();
   const page = await browserContext.newPage();*/
   test.setTimeout(60000);
