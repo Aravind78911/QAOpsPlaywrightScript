@@ -1,9 +1,11 @@
 
 name: Playwright Tests
-push:
-   branches: [main, master]
+
+on:
+  push:
+    branches: [main, master]
   pull_request:
-   branches: [main, master]
+    branches: [main, master]
 
 permissions:
   contents: read
@@ -25,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
       - name: Azure Login
         uses: azure/login@v3
         with:
@@ -42,3 +47,4 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+
